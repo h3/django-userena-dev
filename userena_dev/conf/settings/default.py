@@ -137,6 +137,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'test_app',
     'userena',
     'guardian',
     'south',
@@ -185,7 +186,7 @@ AUTHENTICATION_BACKENDS = (
 
 ANONYMOUS_USER_ID = -1
 
-#AUTH_PROFILE_MODULE = 'userena_dev.UserProfile'
+AUTH_PROFILE_MODULE = 'auth.UserProfile'
 #AUTH_USER_MODEL = 'userena_dev.zoneclient.User'
 
 LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
